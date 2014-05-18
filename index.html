@@ -1,102 +1,374 @@
-<!doctype html>
-<html>
-    <head>        
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/stylesheets/style.css">
+<!DOCTYPE html>
+<html lang="en">
 
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="assets/javascripts/backstretch.js"></script>
-        <script src="assets/javascripts/bxslider.js?body=1"></script>
-        <script src="assets/javascripts/faker.js?body=1"></script>
-        <script src="assets/javascripts/holder.js?body=1"></script>
-        <script src="assets/javascripts/application.js"></script>
-        <script>
-            window.cover = '/assets/images/cover.jpg';
-        </script>
-    </head>
-    <body>
-        <div class='page-wrapper'>
-          <header class='page-cover' id='page-cover'>
-            <nav class='navbar navbar-default' role='navigation'>
-              <div class='container-fluid'>
-                <div class='navbar-header'>
-                  <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'>
-                    <span class='sr-only'>Toggle navigation</span>
-                    <span class='icon-bar'></span>
-                    <span class='icon-bar'></span>
-                    <span class='icon-bar'></span>
-                  </button>
-                  <a class='navbar-brand' href='#'>
-                    <img alt='LOGO 30 Days to MARS' src='assets/images/small-logo.png'>
-                  </a>
-                </div>
-                <div class='collapse navbar-collapse' id='navbar-collapse'>
-                  <ul class='nav navbar-nav navbar-right'>                    
-                    <li>
-                      <a href='#tentang'>Tentang</a>
-                    </li>
-                    <li>
-                      <a href='#'>Lokasi</a>
-                    </li>
-                    <li>
-                      <a href='#'>Galeri</a>
-                    </li>
-                    <li>
-                      <a href='#'>Kontak</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-              </div>
-              <!-- /.container-fluid -->
-            </nav>
-            <div class='page-cover__header text-center'>
-              <h1>30 Days to MARS</h1>
-              <ul class='bxslider'>
-                <li>
-                  <h4 class='header-subtitle'></h4>
-                </li>
-                <li>
-                  <h4 class='header-subtitle'></h4>
-                </li>
-                <li>
-                  <h4 class='header-subtitle'></h4>
-                </li>
-                <li>
-                  <h4 class='header-subtitle'></h4>
-                </li>
-                <li>
-                  <h4 class='header-subtitle'></h4>
-                </li>
-              </ul>
-            </div>
-          </header>
-          <div class='page-content__tentang' id="tentang">
-            <div class='misi'>
-                <h1 class="page-header">MISI</h1>
-                <p>Menumbuhkembangkan penerapan ilmu pengetahuan dan teknologi di semua lapisan masyarakat.</p>
-            </div>
-            <div class="tujuan">
-                <h1 class="page-header">TUJUAN</h1>
-                <p>Kegiatan ini memiliki dua tujuan yang hendak dicapai. Pertama masyarakat sebagai target sasaran, lalu mahasiswa atau peserta pelaksana kegiatan sebagai tujuan untuk pembelajaran.
-Bagi masyarakat :
-<ol>
-    <li>Mengggali potensi aktif dan proaktif masyarakat serta memberdayakan masyarakat dalam upaya pembangunan sosial secara spiritual.</li>
-    <li>Meningkatkan rasa kesadaran, pengetahuan dan tingkat kepedulian masyarakat, terhadap segala aspek ilmu pengetahuan, terutama bidang pendidikan,keagamaan, sosial kebudayaan dan teknologi.</li> 
-    <li>Mengaplikasikan kemampuan akademis mahasiswa pada dunia realitas di masyarakat, sehingga mampu memahami pola gerak kehidupan dan permasalahan. </li>
-    <li>Mendapatkan pengalaman dan pendidikan dalam pemberdayaan teknologi informasi.</li>
-    <li>Terjalin kerja sama yang baik antara lembaga pemerintah dan non pemerintah.</li>
-</ol>
-Bagi peserta dan pelaksana kegiatan :
-<ol>
-    <li>Dapat mensosialisasikan dan mempraktekkan ilmu yang telah didapatkan di bangku perkuliahan.</li>
-    <li>Dapat mempelajari secara langsung kondisi sosial, pendidikan, keagamaan dan perekonomian di masyarakat.</li>
-    <li>Menjadi cerminan dan sarana pembelajaran nyata agar kelak dapat mengembangkannya di masa depan.</li>
-</ol>
-            </p>
-            </div>
-          </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>30 Days To MARS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand"><a href="http://to-mars.github.io">30 Days to MARS</a>
+            </li>
+            <li><a href="#top">Home</a>
+            </li>
+            <li><a href="#tujuan">Tujuan</a>
+            </li>
+            <li><a href="#proker">Program Kerja</a>
+            </li>
+            <li><a href="#team">Anggota Kelompok</a>
+            </li>
+            <li><a href="#lokasi">Lokasi KKN</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /Side Menu -->
+
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+        <div class="vert-text">
+            <h1>KKN MARS</h1>
+            <h3>
+                Menumbuhkembangkan Penerapan Ilmu Pengetahuan dan Teknologi di Semua Lapisan Masyarakat
+            </h3>
+            <a href="#tujuan"><i class="fa fa-arrow-circle-down fa-5x"></i></a>
         </div>
-    </body>
+    </div>
+    <!-- /Full Page Image Header Area -->
+
+    <!-- Intro -->
+    <div id="tujuan" class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <div class="row">
+                        <h2 class="color-blue">Tujuan</h2>
+                        <hr>
+                    </div>
+                    <div class="text-left">
+                        <div class="col-md-6">
+                            <p>Bagi masyarakat :</p>
+                        <ul>
+                            <li>Mengggali potensi aktif dan proaktif masyarakat serta memberdayakan masyarakat dalam upaya pembangunan sosial secara spiritual.</li>
+                            <li>Meningkatkan rasa kesadaran, pengetahuan dan tingkat kepedulian masyarakat, terhadap segala aspek ilmu pengetahuan, terutama bidang pendidikan,keagamaan, sosial kebudayaan dan teknologi.</li>
+                            <li>Mengaplikasikan kemampuan akademis mahasiswa pada dunia realitas di masyarakat, sehingga mampu memahami pola gerak kehidupan dan permasalahan. </li>
+                            <li>Mendapatkan pengalaman dan pendidikan dalam pemberdayaan teknologi informasi.</li>
+                            <li>Terjalin kerja sama yang baik antara lembaga pemerintah dan non pemerintah.</li>
+                        </ul>
+
+                        </div>
+                        <div class="col-md-6">
+                            <p>Bagi peserta dan pelaksana kegiatan :</p>
+                        <ul>
+                            <li>Dapat mensosialisasikan dan mempraktekkan ilmu yang telah didapatkan di bangku perkuliahan.</li>
+                            <li>Dapat mempelajari secara langsung kondisi sosial, pendidikan, keagamaan dan perekonomian di masyarakat.</li>
+                            <li>Menjadi cerminan dan sarana pembelajaran nyata agar kelak dapat mengembangkannya di masa depan.</li>
+                        </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Intro -->
+
+    <!-- Program Kerja -->
+    <div id="proker" class="proker">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2>Program Kerja</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="service-item">
+                        <i class="service-icon fa fa-book"></i>
+                        <h4>Edukasi</h4>
+                        <ul class="text-left">
+                            <li>Pelatihan kerajinan tangan</li>
+                            <li>Mengajar umum </li>
+                            <li>Pembuatan taman baca (perpustakaan)</li>
+                            <li>Pengenalan teknologi dan bahasa </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="service-item">
+                        <i class="service-icon fa fa-stethoscope"></i>
+                        <h4>Peduli Lingkungan, Kesehatan, dan Kebersihan</h4>
+                        <ul class="text-left">
+                            <li>Aksi bersih desa</li>
+                            <li>Test Golongan Darah</li>
+                            <li>Pelatihan Pembuatan Pangan Sehat</li>
+                            <li>Edukasi Perilaku Hidup Bersih dan Sehat (PHBS)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="service-item">
+                        <i class="service-icon fa fa-user"></i>
+                        <h4>Sosial, Ekonomi dan Hukum</h4>
+                        <ul class="text-left">
+                            <li>Pemberdayaan tempat ibadah</li>
+                            <li>Penyuluhan hukum</li>
+                            <li>Penyuluhan problem sosial</li>
+                            <li>Studi kelayakan bisnis</li>
+                            <li>Perayaan memperingati hari kemerdekaan RI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Proker -->
+
+    <!-- Callout -->
+    <div class="callout">
+        <div class="vert-text">
+            <h1>30 Hari Menuju MARS</h1>
+        </div>
+    </div>
+    <!-- /Callout -->
+
+    <!-- Team -->
+    <div id="team" class="team">
+        <div class="container">
+            <div class="row">
+                <h2 class="color-blue text-center">Anggota Kelompok</h2>
+                <hr>
+            </div>
+            <!-- row 1 -->
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/moti.jpg">
+                        </a>
+                        <h4>Muhammad Motia Herlambang</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/anne.jpg">
+                        </a>
+                        <h4>Putri Anneke Nurambar Sari</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/kiki.jpg">
+                        </a>
+                        <h4>Rizki Dewi Apriliani</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/umah.jpg">
+                        </a>
+                        <h4>Nu’umah Apriliani Ashri</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- row 2 -->
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/firman.jpg">
+                        </a>
+                        <h4>Firman Santyabudi</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/bhew.jpg">
+                        </a>
+                        <h4>Mochamad Sandhika Rizkiandy</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/reda.jpg">
+                        </a>
+                        <h4>Reda Pahlevi Firdaus</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/erro.jpg">
+                        </a>
+                        <h4>Felicino Harferro</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- row 3 -->
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/dila.jpg">
+                        </a>
+                        <h4>Fadhilati Haqiqiyah</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/saiq.jpg">
+                        </a>
+                        <h4>Muhammad Saiqul Haq</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/rais.jpg">
+                        </a>
+                        <h4>Rais</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/irsyad.png">
+                        </a>
+                        <h4>Irsyad</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- row 3 -->
+            <div class="row">
+                <div class="col-md-3 col-md-offset-5 text-center">
+                    <div class="team-item">
+                        <a href="#">
+                            <img class="img-team img-responsive" src="assets/images/anggota/aya.jpg">
+                        </a>
+                        <h4>Maryatul</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Team -->
+
+    <!-- Call to Action -->
+    <div class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h3>Follow akun twitter kami untuk berita terbaru.</h3>
+                    <a href="https://twitter.com/menujumars" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @menujumars</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Call to Action -->
+
+    <!-- Map -->
+    <div id="lokasi" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://mapsengine.google.com/map/embed?mid=z3vMHBWM43ZA.kLWEH01FPLI8"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe>
+    </div>
+    <!-- /Map -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/groups/1399681013644162/">
+                                <i class="fa fa-facebook fa-3x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/menujumars">
+                                <i class="fa fa-twitter fa-3x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:asds">
+                                <i class="fa fa-envelope fa-3x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="top-scroll">
+                        <a href="#top"><i class="fa fa-arrow-circle-up scroll fa-4x"></i></a>
+                    </div>
+                    <hr>
+                    <p>Sekretariat: <br> Jl. Garuda, Gg. H. Maat, RT 08/01 no. 90, Kp. Rumbut Kel. Pasir Gunung Selatan <br> Cimanggis-Depok</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
 </html>
