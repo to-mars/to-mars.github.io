@@ -143,17 +143,17 @@ body {
 }
 
 /* Services */
-.services {
+.proker {
   background: #1B94D3;
   padding: 50px 0;
   color: #ffffff;
 }
 
-.service-item {
+.proker-item {
   margin-bottom: 15px;
 }
 
-i.service-icon {
+i.proker-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
